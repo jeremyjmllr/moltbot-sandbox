@@ -3,7 +3,25 @@
     "defaults": {
       "workspace": "/root/clawd",
       "model": {
-        "primary": "anthropic/claude-sonnet-4-5-20250929"
+        "primary": "anthropic/claude-haiku-4-5"
+      },
+      "cache": {
+        "enabled": true,
+        "ttl": "5m",
+        "priority": "high"
+      },
+      "models": {
+        "anthropic/claude-sonnet-4-5": {
+          "alias": "sonnet",
+          "cache": true
+        },
+        "anthropic/claude-haiku-4-5": {
+          "alias": "haiku"
+        },
+        "anthropic/claude-opus-4-5": {
+          "alias": "opus",
+          "cache": true
+        }
       }
     }
   },
